@@ -18,10 +18,40 @@ $(document).ready(function(){
 
 
 	// Remove task
-	let removeBtns = $('.task-remove');
-
-	tasks.on('click','.task-remove', function(){
+	tasks.on('click', '.task-remove', function(){
 		$(this).parent().remove();
 	})
 
+
+	// Checked
+	tasks.on('change', '.task-checked input', function(){
+		$(this).parent().next().toggleClass('checked');
+	})
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

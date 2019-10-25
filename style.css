@@ -116,6 +116,9 @@ body{
 	background-position: center;
 }
 
+.checked{
+	text-decoration: line-through;
+}
 
 
 
