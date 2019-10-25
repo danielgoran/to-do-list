@@ -27,6 +27,12 @@ $(document).ready(function(){
 	tasks.on('change', '.task-checked input', function(){
 		$(this).parent().next().toggleClass('checked');
 	})
+
+
+	// Sortable
+	$('#tasks-list').sortable();
+
+
 });
 
 
