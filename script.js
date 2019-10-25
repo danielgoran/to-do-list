@@ -13,7 +13,15 @@ $(document).ready(function(){
 					<task class="task-remove col-3"></task>
 				</li>`;
 		tasks.append(elem);
+		field.val('');
 	})
 
+
+	// Remove task
+	let removeBtns = $('.task-remove');
+
+	tasks.on('click','.task-remove', function(){
+		$(this).parent().remove();
+	})
 
 });
